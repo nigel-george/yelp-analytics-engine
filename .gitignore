@@ -1,5 +1,52 @@
+# --- Project Specific ---
 .env
+.env.local
+Yelp-JSON/
+*.json
+*.csv
+*.log
+
+# --- Python ---
+venv/
+env/
+.venv/
+bin/
+lib/
+include/
 __pycache__/
 *.pyc
-data/
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 *.log
+.mypy_cache/
+.pytest_cache/
+
+# --- Docker ---
+.docker/
+# Note: Do NOT ignore docker-compose.yml as it is needed to run the project
+
+# --- Databases ---
+# Ignore the actual data files stored by Docker if you mapped a local volume
+postgres_data/
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Distribution / Packaging ---
+dist/
+build/
+*.egg-info/
