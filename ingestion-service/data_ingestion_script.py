@@ -4,15 +4,15 @@ import psycopg2
 from psycopg2.extras import execute_values
 from dotenv import load_dotenv
 
-# Load variables from .env file
+
 load_dotenv()
 
-# Explicit configuration to avoid any "ghost" connections
+
 DB_CONFIG = {
     "dbname": os.getenv("DB_NAME"),
     "user": os.getenv("DB_USER"),
     "password": os.getenv("DB_PASSWORD"),
-    "host": os.getenv("DB_HOST"), # Using IP instead of localhost for stability
+    "host": os.getenv("DB_HOST"), 
     "port": os.getenv("DB_PORT")
 }
 
