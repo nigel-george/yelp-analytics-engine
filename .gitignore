@@ -1,41 +1,31 @@
 # --- Project Specific ---
 .env
 .env.local
+# Ignore the big raw data folder entirely
 Yelp-JSON/
-*.json
-*.csv
+# Ignore logs and temp files
 *.log
+*.tmp
 
 # --- Python ---
 venv/
 env/
 .venv/
-bin/
-lib/
-include/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.mypy_cache/
 .pytest_cache/
+.mypy_cache/
 
 # --- Docker ---
+
 .docker/
-# Note: Do NOT ignore docker-compose.yml as it is needed to run the project
 
 # --- Databases ---
-# Ignore the actual data files stored by Docker if you mapped a local volume
+
 postgres_data/
 
 # --- IDEs / Editors ---
