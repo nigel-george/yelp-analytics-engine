@@ -7,6 +7,13 @@ Yelp-JSON/
 *.log
 *.tmp
 
+# --- dbt ---
+yelp_dbt/target/
+yelp_dbt/dbt_packages/
+yelp_dbt/logs/
+yelp_dbt/profiles.yml
+
+
 # --- Python ---
 venv/
 env/
