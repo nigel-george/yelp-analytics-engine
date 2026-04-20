@@ -30,6 +30,7 @@ pip-log.txt
 # --- Docker ---
 
 .docker/
+docker-compose.yml
 
 # --- Databases ---
 

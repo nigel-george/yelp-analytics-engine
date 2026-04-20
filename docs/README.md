@@ -1,3 +1,4 @@
+
 Project: Yelp Analytics Engine
 This project involves building a multi-tier data pipeline to process 7 million Yelp records, moving from raw JSON blobs to a high-performance, validated SQL warehouse.
 
@@ -41,3 +42,18 @@ Finding: I successfully caught records with negative "useful" counts—a data qu
 The Silver layer is now fully indexed and linked via foreign keys, ready for the Gold layer analytics.
 
 ![Silver Layer Final Image](<SILVER LAYER.png>)
+
+
+Phase 3: Analytics Engineering (Gold Layer)
+Transformed raw ingested data into high-value analytical marts using dbt Core.
+
+Logic Implementation: Developed complex SQL models utilizing Window Functions (LAG) to calculate monthly growth metrics and Conditional Aggregations for business performance trends.
+
+Data Integrity: Implemented a testing suite including unique, not_null, and relationship tests to ensure referential integrity between 7M reviews and business entities.
+
+Performance Optimization: Materialized staging layers as Views to minimize storage overhead while materializing Marts as Tables for optimized query performance in downstream BI tools.
+
+Lineage & Docs: Automated documentation generation showing the end-to-end flow from the silver (raw) schema to the analytics (gold) schema.
+
+![Lineage Graph](<Lineage Graph.png>)
+
