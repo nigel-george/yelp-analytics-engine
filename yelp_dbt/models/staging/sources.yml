@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: public # Where your 7M rows are
+    tables:
+      - name: fact_review
+      - name: dim_business
+      - name: dim_user

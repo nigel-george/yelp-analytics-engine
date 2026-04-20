@@ -1,0 +1,30 @@
+
+
+name: 'yelp_dbt'
+version: '1.0.0'
+
+
+profile: 'yelp_dbt'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         
+  - "target"
+  - "dbt_packages"
+
+
+
+models:
+  yelp_dbt:
+    
+    
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
